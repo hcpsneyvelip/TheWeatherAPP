@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weather_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="jordan-ladikos-62738.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MeD-Nb-oo8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="What is the Weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-G1-lxC">
+                                <rect key="frame" x="31" y="28" width="313" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Any City in the World" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5Y-Eo-kyB">
+                                <rect key="frame" x="31" y="76" width="313" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPP-Ac-8CF">
+                                <rect key="frame" x="169" y="121" width="37" height="30"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.97287436548223349" green="0.19230125145086174" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAt-tC-PTQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVm-Oh-309">
+                                <rect key="frame" x="31" y="228" width="313" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q5Y-Eo-kyB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="0Jy-R7-Xwy"/>
+                            <constraint firstItem="xVm-Oh-309" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="10I-xZ-fhU"/>
+                            <constraint firstItem="MeD-Nb-oo8" firstAttribute="top" secondItem="gdY-G1-lxC" secondAttribute="bottom" constant="-68" id="6Ly-xF-UZR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q5Y-Eo-kyB" secondAttribute="trailing" constant="15" id="7m3-pp-wiU"/>
+                            <constraint firstItem="Q5Y-Eo-kyB" firstAttribute="top" secondItem="gdY-G1-lxC" secondAttribute="bottom" constant="8" id="F48-jb-chw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xVm-Oh-309" secondAttribute="trailing" constant="15" id="MBE-TO-VsE"/>
+                            <constraint firstItem="xVm-Oh-309" firstAttribute="top" secondItem="bPP-Ac-8CF" secondAttribute="bottom" constant="77" id="R87-2W-MUb"/>
+                            <constraint firstItem="bPP-Ac-8CF" firstAttribute="top" secondItem="Q5Y-Eo-kyB" secondAttribute="bottom" constant="15" id="Z6I-Kn-5Qx"/>
+                            <constraint firstItem="bPP-Ac-8CF" firstAttribute="top" secondItem="Q5Y-Eo-kyB" secondAttribute="bottom" constant="15" id="acx-9K-Njf"/>
+                            <constraint firstItem="bPP-Ac-8CF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="evI-Uw-BNn"/>
+                            <constraint firstItem="gdY-G1-lxC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l3v-OH-e35"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="locationField" destination="Q5Y-Eo-kyB" id="A0I-e5-DbT"/>
+                        <outlet property="resultLabel" destination="xVm-Oh-309" id="FGq-dZ-t3A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="jordan-ladikos-62738.jpg" width="3458" height="2305"/>
+    </resources>
 </document>

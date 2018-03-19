@@ -12,6 +12,7 @@
 		4DDA28061F33B05000AAE2E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDA28041F33B05000AAE2E5 /* Main.storyboard */; };
 		4DDA28081F33B05000AAE2E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDA28071F33B05000AAE2E5 /* Assets.xcassets */; };
 		4DDA280B1F33B05000AAE2E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDA28091F33B05000AAE2E5 /* LaunchScreen.storyboard */; };
+		4DDA28131F33B17C00AAE2E5 /* jordan-ladikos-62738.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DDA28121F33B17C00AAE2E5 /* jordan-ladikos-62738.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4DDA28071F33B05000AAE2E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DDA280A1F33B05000AAE2E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DDA280C1F33B05000AAE2E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDA28121F33B17C00AAE2E5 /* jordan-ladikos-62738.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jordan-ladikos-62738.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				4DDA28001F33B05000AAE2E5 /* AppDelegate.swift */,
 				4DDA28021F33B05000AAE2E5 /* ViewController.swift */,
 				4DDA28041F33B05000AAE2E5 /* Main.storyboard */,
+				4DDA28121F33B17C00AAE2E5 /* jordan-ladikos-62738.jpg */,
 				4DDA28071F33B05000AAE2E5 /* Assets.xcassets */,
 				4DDA28091F33B05000AAE2E5 /* LaunchScreen.storyboard */,
 				4DDA280C1F33B05000AAE2E5 /* Info.plist */,
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDA28131F33B17C00AAE2E5 /* jordan-ladikos-62738.jpg in Resources */,
 				4DDA280B1F33B05000AAE2E5 /* LaunchScreen.storyboard in Resources */,
 				4DDA28081F33B05000AAE2E5 /* Assets.xcassets in Resources */,
 				4DDA28061F33B05000AAE2E5 /* Main.storyboard in Resources */,
